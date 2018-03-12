@@ -1,6 +1,7 @@
 package cfip
 
 import (
+	"flag"
 	"net"
 
 	"github.com/golang/glog"
@@ -8,6 +9,7 @@ import (
 )
 
 func init() {
+	flag.Parse()
 	cidrs := []string{
 		"103.21.244.0/22",
 		"103.22.200.0/22",
